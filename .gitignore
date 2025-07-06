@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Spark / Delta logs
+*.log
+_delta_log/
+*.parquet
+*.crc
+
+# Local OS files
+.DS_Store
+Thumbs.db
+
+# Output / export folders
+export_csv/
+results/
