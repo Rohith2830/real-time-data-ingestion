@@ -38,7 +38,7 @@ real_time_data_ingestion/
 
 ## 🥪 Sample Email Output
 
-![image](https://github.com/user-attachments/assets/45e2fc93-d230-48f7-b18b-e2a2b7b11fdf)
+![image](https://github.com/user-attachments/assets/10c90c94-4706-4c7c-abbe-44206649291b)
 
 ---
 
