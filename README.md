@@ -55,14 +55,6 @@ spark-submit --packages io.delta:delta-core_2.12:2.3.0 main.py
 
 ---
 
-## 📸 Screenshots
-
-| Fake Data Generated                     | Email Notification                     |
-| --------------------------------------- | -------------------------------------- |
-| ![fake-data](screenshots/fake_data.png) | ![email](screenshots/email_output.png) |
-
----
-
 ## 📦 Dependencies
 
 * Python 3.10+
@@ -91,5 +83,4 @@ pip install -r requirements.txt
 ## 👨‍💼 Author
 
 **Rohith Vadlamudi**
-Intern @ Cebel Technologies
 📧 [rohithvadlamudi.28@gmail.com](mailto:rohithvadlamudi.28@gmail.com)
