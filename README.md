@@ -1,4 +1,4 @@
-# 📊 Real-Time Data Ingestion Pipeline using PySpark & Delta Lake
+# 📊 Real-Time Data Ingestion
 
 ## 🚀 Project Overview
 
