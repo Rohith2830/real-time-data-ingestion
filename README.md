@@ -1,29 +1,95 @@
-# Real-time Data Ingestion with Delta Lake
+# 📊 Real-Time Data Ingestion Pipeline using PySpark & Delta Lake
 
-This project demonstrates a real-time data ingestion pipeline using **PySpark**, **Delta Lake**, and **fake data generation**. It supports:
+## 🚀 Project Overview
 
-- 🔁 Periodic data generation and ingestion
-- 🧪 Delta Table versioning and history tracking
-- 🌍 Timezone-aware Spark processing
-- 📧 Email summaries with HTML tables after each update
+This project implements a **real-time data ingestion pipeline** that generates fake data (Name, Email, Address), appends it to a **Delta Lake table**, tracks **versioning**, handles **time zones**, and sends **email notifications** with HTML summaries of the new data.
 
-## Features
+> ✅ Developed as part of an internship at **Cebel Technologies**.
 
-- Generates fake Name, Address, Email using `Faker`
-- Appends to Delta Table using Delta Lake API
-- Tracks Delta Table versions and timestamps
-- Runs every 5 minutes (configurable)
-- Sends HTML email summary after each append
+---
 
-## Requirements
+## 💠 Features
 
-- Python 3.10
-- Apache Spark 3.x
-- Delta Lake core JAR
-- Java 8+
-- Gmail (App Password for sending emails)
+* ✅ Fake data generation using `Faker`
+* ✅ Append data to **Delta Lake**
+* ✅ Maintain **version history** of the table
+* ✅ Retrieve **latest snapshot** using timestamp logic
+* ✅ Timezone-aware (`Asia/Kolkata`)
+* ✅ Send **HTML email** summaries after each run
+* ✅ **Scheduled every 5 minutes** using Task Scheduler
+* ✅ Full automation via `.bat` script
 
-## Setup
+---
+
+## 📁 Folder Structure
+
+```
+real_time_data_ingestion/
+│
+├── main.py                 # Main pipeline script
+├── config.py               # Configurations (paths, email, interval)
+├── email_utils.py          # Email sending helper
+├── requirements.txt        # Python dependencies
+├── README.md               # Documentation
+└── scheduler.bat           # Batch file to schedule pipeline
+```
+
+---
+
+## 🥪 Sample Email Output
+
+![image](https://github.com/user-attachments/assets/45e2fc93-d230-48f7-b18b-e2a2b7b11fdf)
+
+---
+
+## 🕒 Scheduling the Pipeline
+
+**Step 1:** Use the `scheduler.bat` file:
+
+```bat
+cd C:\Users\HP\real_time_data_ingestion
+spark-submit --packages io.delta:delta-core_2.12:2.3.0 main.py
+```
+
+**Step 2:** Add a **Task Scheduler Job** in Windows to run this file every 5 minutes.
+
+---
+
+## 📸 Screenshots
+
+| Fake Data Generated                     | Email Notification                     |
+| --------------------------------------- | -------------------------------------- |
+| ![fake-data](screenshots/fake_data.png) | ![email](screenshots/email_output.png) |
+
+---
+
+## 📦 Dependencies
+
+* Python 3.10+
+* PySpark
+* Delta Lake
+* Faker
+* `smtplib` for email
+
+Install using:
 
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 📌 Use Cases
+
+* Streaming ingestion simulation
+* Testing Delta Lake integration
+* Scheduled data pipelines
+* Email automation from Spark jobs
+
+---
+
+## 👨‍💼 Author
+
+**Rohith Vadlamudi**
+Intern @ Cebel Technologies
+📧 [rohithvadlamudi.28@gmail.com](mailto:rohithvadlamudi.28@gmail.com)
