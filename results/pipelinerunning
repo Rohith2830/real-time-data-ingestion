@@ -1,0 +1,27 @@
+=================== Real-Time Data Ingestion Pipeline ===================
+
+Starting Spark session with Delta Lake support...
+Using timezone: Asia/Kolkata
+
+Generating 5 fake records...
++----------------+--------------------------+--------------------------+
+|Name            |Address                   |Email                     |
++----------------+--------------------------+--------------------------+
+|Kiran Rao       |55 Lakeview Street, Pune  |kiran.rao@example.com     |
+|Riya Sharma     |12 MG Road, Bangalore     |riya.sharma@example.com   |
+|Anil Kumar      |88 Green Park, Delhi      |anil.kumar@example.com    |
+|Sneha Iyer      |77 Residency, Mumbai      |sneha.iyer@example.com     |
+|Manoj Joshi     |22 Lotus Ave, Chennai     |manoj.joshi@example.com   |
++----------------+--------------------------+--------------------------+
+
+Appending to Delta table at path:
+file:///C:/Users/HP/real_time_data_ingestion/delta/people_data
+
+Appended successfully to Delta table.
+Delta Table Current Version: 5
+
+Sending email notification to: rohith40231@gmail.com
+Email sent successfully with HTML summary.
+
+Waiting for next interval (300 seconds)...
+=========================================================================
